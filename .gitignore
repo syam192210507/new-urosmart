@@ -1,0 +1,32 @@
+# iOS / Xcode
+DerivedData/
+*.xcuserstate
+*.xcworkspace
+*.xcframework/
+*.framework/
+
+# CocoaPods
+Pods/
+
+# Python backend
+venv/
+__pycache__/
+
+# Large compressed files
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+
+# Logs
+*.log
+
+# DS_Store
+.DS_Store
+
+
+# Security
+.env
+*.db
+instance/
+__pycache__/

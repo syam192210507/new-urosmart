@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4499C1A280181E56CC0AD74A /* Pods_UroSmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C549EC86F727D825BB6E94 /* Pods_UroSmart.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		59E33A3A45B33DFF5F316DAA /* Pods-UroSmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UroSmart.debug.xcconfig"; path = "Target Support Files/Pods-UroSmart/Pods-UroSmart.debug.xcconfig"; sourceTree = "<group>"; };
+		72C549EC86F727D825BB6E94 /* Pods_UroSmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UroSmart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9177B9AF0669B7FF6E77F629 /* Pods-UroSmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UroSmart.release.xcconfig"; path = "Target Support Files/Pods-UroSmart/Pods-UroSmart.release.xcconfig"; sourceTree = "<group>"; };
+		B71414762E9F6032002CD22F /* ModelRunner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ModelRunner.xcodeproj; sourceTree = "<group>"; };
+		B71FA7DE2ECF1C6B00A9006B /* TensorFlowLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TensorFlowLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B71FA7E12ECF1D4800A9006B /* TensorFlowLiteC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = TensorFlowLiteC.xcframework; sourceTree = "<group>"; };
+		B71FA7E42ECF1D6600A9006B /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		B71FA7E52ECF1D6600A9006B /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		B71FA7E62ECF1D6600A9006B /* InterpreterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterError.swift; sourceTree = "<group>"; };
+		B71FA7E72ECF1D6600A9006B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B71FA7E82ECF1D6600A9006B /* QuantizationParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantizationParameters.swift; sourceTree = "<group>"; };
+		B71FA7E92ECF1D6600A9006B /* SignatureRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureRunner.swift; sourceTree = "<group>"; };
+		B71FA7EA2ECF1D6600A9006B /* SignatureRunnerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureRunnerError.swift; sourceTree = "<group>"; };
+		B71FA7EB2ECF1D6600A9006B /* Tensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tensor.swift; sourceTree = "<group>"; };
+		B71FA7EC2ECF1D6600A9006B /* TensorFlowLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorFlowLite.swift; sourceTree = "<group>"; };
+		B71FA7EE2ECF1D6600A9006B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		B71FA7F22ECF1D6600A9006B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B71FA7F32ECF1D6600A9006B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B71FA8352ECF1E9B00A9006B /* TensorFlowLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TensorFlowLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E650852E8A75B900D520D9 /* UroSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UroSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7EFC9132ECF107200825928 /* TensorFlowLiteC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TensorFlowLiteC.xcframework; path = Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework; sourceTree = "<group>"; };
+		B7EFC9172ECF10A300825928 /* TensorFlowLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TensorFlowLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B7BBAEEC2ECC741500F4F491 /* Exceptions for "UroSmart" folder in "UroSmart" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ml_training/best.mlpackage,
+			);
+			target = B7E650842E8A75B900D520D9 /* UroSmart */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B7E650872E8A75B900D520D9 /* UroSmart */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B7BBAEEC2ECC741500F4F491 /* Exceptions for "UroSmart" folder in "UroSmart" target */,
+			);
+			path = UroSmart;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7E650822E8A75B900D520D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4499C1A280181E56CC0AD74A /* Pods_UroSmart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FEAF94EA476CC67FD53E776 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59E33A3A45B33DFF5F316DAA /* Pods-UroSmart.debug.xcconfig */,
+				9177B9AF0669B7FF6E77F629 /* Pods-UroSmart.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B714A5F12E9F6033002CD22F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B71FA7E22ECF1D4800A9006B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B71FA7E12ECF1D4800A9006B /* TensorFlowLiteC.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		B71FA7E32ECF1D4800A9006B /* TensorFlowLiteC */ = {
+			isa = PBXGroup;
+			children = (
+				B71FA7E22ECF1D4800A9006B /* Frameworks */,
+			);
+			name = TensorFlowLiteC;
+			path = Pods/TensorFlowLiteC;
+			sourceTree = "<group>";
+		};
+		B71FA7ED2ECF1D6600A9006B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B71FA7E42ECF1D6600A9006B /* Delegate.swift */,
+				B71FA7E52ECF1D6600A9006B /* Interpreter.swift */,
+				B71FA7E62ECF1D6600A9006B /* InterpreterError.swift */,
+				B71FA7E72ECF1D6600A9006B /* Model.swift */,
+				B71FA7E82ECF1D6600A9006B /* QuantizationParameters.swift */,
+				B71FA7E92ECF1D6600A9006B /* SignatureRunner.swift */,
+				B71FA7EA2ECF1D6600A9006B /* SignatureRunnerError.swift */,
+				B71FA7EB2ECF1D6600A9006B /* Tensor.swift */,
+				B71FA7EC2ECF1D6600A9006B /* TensorFlowLite.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B71FA7EF2ECF1D6600A9006B /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				B71FA7ED2ECF1D6600A9006B /* Sources */,
+				B71FA7EE2ECF1D6600A9006B /* PrivacyInfo.xcprivacy */,
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+		B71FA7F02ECF1D6600A9006B /* lite */ = {
+			isa = PBXGroup;
+			children = (
+				B71FA7EF2ECF1D6600A9006B /* swift */,
+			);
+			path = lite;
+			sourceTree = "<group>";
+		};
+		B71FA7F12ECF1D6600A9006B /* tensorflow */ = {
+			isa = PBXGroup;
+			children = (
+				B71FA7F02ECF1D6600A9006B /* lite */,
+			);
+			path = tensorflow;
+			sourceTree = "<group>";
+		};
+		B71FA7F42ECF1D6600A9006B /* TensorFlowLiteSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B71FA7F12ECF1D6600A9006B /* tensorflow */,
+				B71FA7F22ECF1D6600A9006B /* LICENSE */,
+				B71FA7F32ECF1D6600A9006B /* README.md */,
+			);
+			name = TensorFlowLiteSwift;
+			path = Pods/TensorFlowLiteSwift;
+			sourceTree = "<group>";
+		};
+		B7E6507C2E8A75B900D520D9 = {
+			isa = PBXGroup;
+			children = (
+				B7E650872E8A75B900D520D9 /* UroSmart */,
+				B7E650862E8A75B900D520D9 /* Products */,
+				8FEAF94EA476CC67FD53E776 /* Pods */,
+				F9879C13B2D40A8C8DC088B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7E650862E8A75B900D520D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7E650852E8A75B900D520D9 /* UroSmart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9879C13B2D40A8C8DC088B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B71FA8352ECF1E9B00A9006B /* TensorFlowLite.framework */,
+				B71FA7F42ECF1D6600A9006B /* TensorFlowLiteSwift */,
+				B71FA7E32ECF1D4800A9006B /* TensorFlowLiteC */,
+				B71FA7DE2ECF1C6B00A9006B /* TensorFlowLite.framework */,
+				B7EFC9172ECF10A300825928 /* TensorFlowLite.framework */,
+				B7EFC9132ECF107200825928 /* TensorFlowLiteC.xcframework */,
+				72C549EC86F727D825BB6E94 /* Pods_UroSmart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7E650842E8A75B900D520D9 /* UroSmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7E650932E8A75BA00D520D9 /* Build configuration list for PBXNativeTarget "UroSmart" */;
+			buildPhases = (
+				112F0AFEC9F0EAA078250B2A /* [CP] Check Pods Manifest.lock */,
+				B7E650812E8A75B900D520D9 /* Sources */,
+				B7E650822E8A75B900D520D9 /* Frameworks */,
+				B7E650832E8A75B900D520D9 /* Resources */,
+				280AF068F9AB4732E16780AA /* [CP] Embed Pods Frameworks */,
+				A2BA461D59703EEFCB776766 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B7E650872E8A75B900D520D9 /* UroSmart */,
+			);
+			name = UroSmart;
+			productName = UroSmart;
+			productReference = B7E650852E8A75B900D520D9 /* UroSmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7E6507D2E8A75B900D520D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					B7E650842E8A75B900D520D9 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = B7E650802E8A75B900D520D9 /* Build configuration list for PBXProject "UroSmart" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7E6507C2E8A75B900D520D9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B7E650862E8A75B900D520D9 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B714A5F12E9F6033002CD22F /* Products */;
+					ProjectRef = B71414762E9F6032002CD22F /* ModelRunner.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B7E650842E8A75B900D520D9 /* UroSmart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7E650832E8A75B900D520D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		112F0AFEC9F0EAA078250B2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UroSmart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		280AF068F9AB4732E16780AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UroSmart/Pods-UroSmart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UroSmart/Pods-UroSmart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UroSmart/Pods-UroSmart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2BA461D59703EEFCB776766 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UroSmart/Pods-UroSmart-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UroSmart/Pods-UroSmart-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UroSmart/Pods-UroSmart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7E650812E8A75B900D520D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B7E650912E8A75BA00D520D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7E650922E8A75BA00D520D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7E650942E8A75BA00D520D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59E33A3A45B33DFF5F316DAA /* Pods-UroSmart.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UroSmart/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppTransportSecurity = "<dict><key>NSAllowsLocalNetworking</key><true/><key>NSAllowsArbitraryLoads</key><true/></dict>";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saveetha.pil-remainder.UroSmart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7E650952E8A75BA00D520D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9177B9AF0669B7FF6E77F629 /* Pods-UroSmart.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UroSmart/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppTransportSecurity = "<dict><key>NSAllowsLocalNetworking</key><true/><key>NSAllowsArbitraryLoads</key><true/></dict>";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saveetha.pil-remainder.UroSmart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7E650802E8A75B900D520D9 /* Build configuration list for PBXProject "UroSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E650912E8A75BA00D520D9 /* Debug */,
+				B7E650922E8A75BA00D520D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7E650932E8A75BA00D520D9 /* Build configuration list for PBXNativeTarget "UroSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E650942E8A75BA00D520D9 /* Debug */,
+				B7E650952E8A75BA00D520D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7E6507D2E8A75B900D520D9 /* Project object */;
+}

@@ -1,0 +1,22 @@
+platform :ios, '16.0'
+
+target 'UroSmart' do
+  use_frameworks!
+  inhibit_all_warnings!
+
+  pod 'TensorFlowLiteSwift', '2.17.0'
+  pod 'TensorFlowLiteC', '2.17.0'
+  pod 'Alamofire'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '16.0'
+      config.build_settings['SWIFT_STRICT_CONCURRENCY'] = 'minimal'
+      config.build_settings['SWIFT_VERSION'] = '5.0'
+      config.build_settings['SWIFT_TREAT_WARNINGS_AS_ERRORS'] = 'NO'
+    end
+  end
+end
+
