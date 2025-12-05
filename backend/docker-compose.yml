@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - SECRET_KEY=${SECRET_KEY:-dev-secret-key}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-jwt-secret-key}
+      - DATABASE_URL=${DATABASE_URL}
+      - DEBUG=${DEBUG:-False}
+    volumes:
+      - ./uploads:/app/uploads
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=urosmart
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=urosmart
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/certs:/etc/nginx/certs
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
